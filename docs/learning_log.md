@@ -116,3 +116,25 @@
 ### Output
 - Saved to:
   `data/processed/reliable_meter_clusters.csv`
+
+  ## Milestone: Cluster Behavioral Interpretation
+
+### Cluster 0: Night-Oriented Profile
+- Higher normalized consumption during midnight and early morning.
+- Consumption decreases during the daytime.
+- Consumption increases again during evening and late night.
+- Peak occurs approximately around 23:00.
+
+### Cluster 1: Day-Oriented Profile
+- Lower consumption during midnight and early morning.
+- Strong increase begins around 07:00.
+- Main peak occurs approximately around 09:00.
+- Relatively higher daytime consumption.
+- Consumption decreases during late evening.
+
+### Interpretation
+- The clustering experiment identified two distinct average hourly consumption profiles.
+- Cluster 0 has relatively stronger nighttime consumption.
+- Cluster 1 has relatively stronger daytime and morning consumption.
+- Cluster labels are behavioral groupings, not confirmed consumer categories.
+- Further validation is required before assigning real-world consumer types.
