@@ -86,3 +86,33 @@
 ### Output
 - Saved meter-level clustering results to:
   `data/processed/meter_clusters.csv`
+
+  ## Milestone: Reliability-Filtered Clustering
+
+### Filtering
+- Original meters: 38
+- Excluded meters: 5
+- Reliable meters: 33
+- Exclusion threshold: More than 50% zero-energy readings
+
+### Model Comparison
+- Original K=2 silhouette score: 0.2265
+- Reliable K=2 silhouette score: 0.2895
+- Reliable K=3 silhouette score: 0.2462
+
+### Working Baseline
+- Algorithm: K-Means
+- Number of clusters: 2
+- Cluster 0: 23 meters
+- Cluster 1: 10 meters
+- Features: 24 normalized hourly consumption values
+
+### Interpretation
+- Reliability filtering improved the silhouette score in this experiment.
+- The two clusters are preliminary behavioral groupings.
+- Cluster meanings require further profile analysis.
+- Raw data and excluded meters are preserved.
+
+### Output
+- Saved to:
+  `data/processed/reliable_meter_clusters.csv`
