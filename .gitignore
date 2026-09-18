@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+secrets/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Generated model files
+*.pkl
+*.joblib
+
+# Raw dataset (temporarily excluded while checking size and source)
+data/raw/dataset.csv
