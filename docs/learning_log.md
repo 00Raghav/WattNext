@@ -56,3 +56,33 @@
 - No readings have been deleted.
 - Suspicious values will be considered during feature engineering and modeling.
 - Further investigation may be performed if necessary.
+
+
+## Milestone: First K-Means Clustering Experiment
+
+### Features Used
+- 24 hourly average energy consumption values per meter.
+- Each row represents one meter.
+- Hourly profiles were normalized by each meter's average consumption.
+
+### Model
+- Algorithm: K-Means Clustering
+- Tested K values: 2 to 8
+- Selected initial K: 2
+- Random state: 42
+- Silhouette score for K=2: 0.2265
+
+### Results
+- Cluster 0: 15 meters
+- Cluster 1: 23 meters
+- Cluster 0 total energy: 19,414.132 kWh
+- Cluster 1 total energy: 57,217.438 kWh
+
+### Initial Interpretation
+- Cluster 0 shows a stronger daytime consumption pattern.
+- Cluster 1 shows relatively stronger nighttime consumption.
+- The clusters are preliminary because the silhouette score is relatively low.
+
+### Output
+- Saved meter-level clustering results to:
+  `data/processed/meter_clusters.csv`
