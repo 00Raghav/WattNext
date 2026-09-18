@@ -138,3 +138,26 @@
 - Cluster 1 has relatively stronger daytime and morning consumption.
 - Cluster labels are behavioral groupings, not confirmed consumer categories.
 - Further validation is required before assigning real-world consumer types.
+
+## Milestone: Cluster Comparison
+
+### Cluster Statistics
+
+| Metric | Cluster 0 | Cluster 1 |
+|---|---:|---:|
+| Number of meters | 23 | 10 |
+| Total energy (kWh) | 58190.790 | 17351.886 |
+| Average energy (kWh) | 0.0197 | 0.0213 |
+| Average voltage (V) | 217.7315 | 228.0942 |
+| Average current (A) | 1.8253 | 2.0297 |
+| Average frequency (Hz) | 45.3828 | 47.1010 |
+| Zero-energy percentage | 14.0599 | 10.0630 |
+
+### Interpretation
+
+- Cluster 0 contains more meters than Cluster 1.
+- Cluster 1 has slightly higher average energy per reading.
+- Cluster 1 has higher average voltage, current, and frequency.
+- Cluster 0 has a higher zero-energy percentage.
+- Total energy is affected by the different number of meters in each cluster.
+- These clusters represent preliminary behavioral groupings, not confirmed consumer categories.
